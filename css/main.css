@@ -1,0 +1,43 @@
+/* GLOBAL */
+
+
+/* HERO */
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pic1.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* MEDIA GALLERY */
+.media-gallery figure {
+    flex: none;
+}
+
+.media-gallery video,
+.media-gallery iframe {
+    width: 320px; 
+    height: 180px; 
+}
+
+.media-gallery video {
+    object-fit: none; 
+}
+
+/* FOOTER */
+.fa-facebook-f {
+    color: #3B5998; /* facebook brand color */
+}
+
+.fa-instagram {
+    color: #fb3958; /* instagram brand color */
+}
+
+/* LARGER SCREENS */
+@media only screen and (min-width: 700px) {
+    .media-gallery video,
+    .media-gallery iframe {
+        width: 480px;
+        height: 270px;
+    }
+}
