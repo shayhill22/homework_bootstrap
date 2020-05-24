@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>HTML Homework Bootstrap</title>
   <meta name="description" content="Code First: Girls front-end developer course homework with Bootstrap.">
@@ -25,31 +25,51 @@
 </head>
 
 <body>
-  <header>
-    <a href="./index.html"><h1>Homework</h1></a>
-    <!-- Nav -->
-    <nav>
-      <ul>
-        <li><a href="./pages/page2.html">Page 2</a></li>
-        <li><a href="http://www.google.com" target="_blank">Google</a></li>
+<!-- Nav -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light border-bottom">
+    <a class="pb-0 navbar-brand text-uppercase" href="#">
+      <h1>Homework</h1>
+    </a>
+
+    <button
+      type="button"
+      class="navbar-toggler"
+      data-toggle="collapse"
+      data-target="#mainNavigation"
+      aria-controls="mainNavigation"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="./pages/page2.html">Page 2</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://www.google.com" target="_blank">Google</a>
+        </li>
       </ul>
-    </nav>
-  </header>
+    </div>
+  </nav>
 
   <!-- Main -->
   <main>
-    <div>
+    <!-- Jumbotron -->
+    <div class="hero">
       <div>
         <h2>Welcome to my first HTML page!</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam labore ullam hic doloremque est debitis
           temporibus tenetur nisi quibusdam nesciunt quo, eligendi quos error libero minus quod. Autem, sunt unde.
         </p>
-        <button onclick="buttonAlert()">Click me!</button>
+        <button type="button" onclick="buttonAlert()">Click me!</button>
       </div>
-    </div><!-- end of hero -->
+    </div><!-- end of Jumbotron -->
 
-    <section id="gallery" class="">
+    <section id="gallery" class="image-gallery">
       <img src="./img/pic1.jpeg" alt="whaleshark">
       <img src="./img/pic2.jpeg" alt="badger">
       <img src="./img/pic3.jpeg" alt="cow">
@@ -59,16 +79,14 @@
   <!-- Footer -->
   <footer>
     <div>
-      <div>
-        <a href="https://www.facebook.com" aria-label="Facebook">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://www.instagram.com" aria-label="Instagram">
-          <i class="fab fa-instagram"></i>
-        </a>
-      </div>  
-      <p>Made with <span>&hearts;</span> by Code First Girls &copy; 2019</p>
-    </div>
+      <a href="https://www.facebook.com" target="_blank" class="social-link" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.instagram.com" target="_blank" class="social-link" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>  
+    <p>Made with <span class="heart">&hearts;</span> by Code First Girls &copy; 2019</p>
   </footer>
 
   <!-- Bootstrap JavaScript -->

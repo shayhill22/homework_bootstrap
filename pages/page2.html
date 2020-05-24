@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Homework Bootstrap 2</title>
   <meta name="description" content="Code First: Girls front-end developer course homework with Bootstrap page 2.">
   
@@ -24,20 +24,39 @@
 </head>
 
 <body>
-  <header>
-    <a href="../index.html"><h1>Homework</h1></a>
-    <!-- Nav -->
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="http://www.google.com" target="_blank">Google</a></li>
+  <!-- Nav -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light border-bottom">
+    <a class="pb-0 navbar-brand text-uppercase" href="../index.html">
+      <h1>Homework</h1>
+    </a>
+
+    <button
+      type="button"
+      class="navbar-toggler"
+      data-toggle="collapse"
+      data-target="#mainNavigation"
+      aria-controls="mainNavigation"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavigation">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://www.google.com" target="_blank">Google</a>
+        </li>
       </ul>
-    </nav>
-  </header>
+    </div>
+  </nav>
   
   <!-- Main -->
   <main>   
-    <div>
+    <div class="hero hero-image">
       <div>
         <h2>Welcome to Page 2!</h2>
         <p>
@@ -47,72 +66,74 @@
       </div>
     </div>
 
-    <section id="media">
-      <figure>
-        <iframe
-          title="Whale Shark - BBC Planet Earth"
-          src="https://www.youtube.com/embed/_B8qiqeDrI0"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        >
-        </iframe>
-        <!-- caption -->
-        <figcaption>Whale Shark documentary form BBC</figcaption>
-      </figure>
-
-      <figure>
-        <video controls>
-          <source src="../video/movie.mp4" type="video/mp4">
-        </video>
-        <figcaption>Construction toy demo</figcaption>
-      </figure>
-
-    </section><!-- end of media -->
-
-    <section id="poll">
-      <table>
-        <thead>
-          <tr>
-            <th>Language</th>
-            <th>Difficulty</th>
-            <th>Star rating</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>HTML</td>
-            <td>2</td>
-            <td>2</td>
-          </tr>
-          <tr>
-            <td>CSS</td>
-            <td>5</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <td>Javascript</td>
-            <td>7</td>
-            <td>5</td>
-          </tr>
-        </tbody>
-      </table>
-    </section><!-- end of poll -->
+    <div>
+      <section id="media" class="media-gallery">
+        <figure>
+          <iframe
+            title="Whale Shark - BBC Planet Earth"
+            src="https://www.youtube.com/embed/_B8qiqeDrI0"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          >
+          </iframe>
+          <!-- caption -->
+          <figcaption>Whale Shark documentary form BBC</figcaption>
+        </figure>
+  
+        <figure>
+          <video controls>
+            <source src="../video/movie.mp4" type="video/mp4">
+          </video>
+          <!-- caption -->
+          <figcaption>Construction toy demo</figcaption>
+        </figure>
+      </section><!-- end of media -->
+  
+      <section id="poll">
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th>Language</th>
+                <th>Difficulty</th>
+                <th>Star rating</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HTML</td>
+                <td>2</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>CSS</td>
+                <td>5</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>Javascript</td>
+                <td>7</td>
+                <td>5</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section><!-- end of poll -->
+    </div>
   </main>
 
     <!-- Footer -->
     <footer>
       <div>
-        <div>
-          <a href="https://www.facebook.com" aria-label="Facebook">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://www.instagram.com" aria-label="Instagram">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </div>  
-        <p>Made with <span>&hearts;</span> by Code First Girls &copy; 2019</p>
+        <a href="https://www.facebook.com" target="_blank" class="social-link" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com" target="_blank" class="social-link" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
       </div>
+      <p>Made with <span class="heart">&hearts;</span> by Code First Girls &copy; 2019</p>
     </footer>
 
     <!-- Bootstrap JavaScript -->
