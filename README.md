@@ -12,7 +12,7 @@ Bootstrap is a free and open-source CSS framework directed at responsive, mobile
 
 - [Layout](https://getbootstrap.com/docs/4.5/layout/overview/)
 
-- [Content]{https://getbootstrap.com/docs/4.5/content/reboot/}
+- [Content](https://getbootstrap.com/docs/4.5/content/reboot/)
 
 - [Components](https://getbootstrap.com/docs/4.5/components/)
 
