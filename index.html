@@ -2,120 +2,141 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Homework Bootstrap</title>
+    <meta name="description" content="Code First: Girls front-end developer course homework with Bootstrap.">
 
-  <title>HTML Homework Bootstrap</title>
-  <meta name="description" content="Code First: Girls front-end developer course homework with Bootstrap.">
-
-  <!-- Bootstrap -->
-  <link
-    rel="stylesheet"
-    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-    crossorigin="anonymous"
-  >
-  <!-- Font Awesome Icons -->
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-    crossorigin="anonymous"
-  >
-  <link rel="stylesheet" href="./css/main.css">
+    <!-- Bootstrap -->
+    <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+        crossorigin="anonymous"
+    >
+    <!-- Font Awesome Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+        crossorigin="anonymous"
+    >
+    <!-- Stylesheet --> 
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
-<!-- Nav -->
-  <nav class="navbar navbar-expand-md navbar-light bg-light border-bottom">
-    <a class="pb-0 navbar-brand text-uppercase" href="#">
-      <h1>Homework</h1>
-    </a>
+    <!-- Nav -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light border-bottom">
+        <a class="pb-0 navbar-brand text-uppercase" href="#">
+            <h1>Homework</h1>
+        </a>
 
-    <button
-      type="button"
-      class="navbar-toggler"
-      data-toggle="collapse"
-      data-target="#mainNavigation"
-      aria-controls="mainNavigation"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+        <button
+            type="button"
+            class="navbar-toggler"
+            data-toggle="collapse"
+            data-target="#mainNavigation"
+            aria-controls="mainNavigation"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse" id="mainNavigation">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="./pages/page2.html">Page 2</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="http://www.google.com" target="_blank">Google</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+        <div class="collapse navbar-collapse" id="mainNavigation">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/page2.html">Page 2</a>
+                </li>
 
-  <!-- Main -->
-  <main>
-    <!-- Jumbotron -->
-    <div class="hero">
-      <div>
-        <h2>Welcome to my first HTML page!</h2>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.google.com" target="_blank" rel="noreferrer">
+                        Google
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main -->
+    <main>
+        <!-- Jumbotron -->
+        <div class="hero">
+            <div>
+                <h2>Welcome to my first HTML page!</h2>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam labore ullam hic doloremque est debitis
+                    temporibus tenetur nisi quibusdam nesciunt quo, eligendi quos error libero minus quod. Autem, sunt unde.
+                </p>
+
+                <button type="button" onclick="buttonAlert()">Click me!</button>
+            </div>
+        </div><!-- end of Jumbotron -->
+
+        <section id="gallery" class="image-gallery">
+            <img src="./img/pic1.jpeg" alt="whaleshark">
+            <img src="./img/pic2.jpeg" alt="badger">
+            <img src="./img/pic3.jpeg" alt="cow">
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <a
+                href="https://www.facebook.com"
+                class="social-link"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Facebook"
+            >
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a
+                href="https://www.instagram.com"
+                class="social-link"
+                target="_blank"
+                rel="noreferrer"
+                class="social-link"
+                aria-label="Instagram"
+            >
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam labore ullam hic doloremque est debitis
-          temporibus tenetur nisi quibusdam nesciunt quo, eligendi quos error libero minus quod. Autem, sunt unde.
+            Made with <span class="heart">&hearts;</span> by Code First Girls &copy; 2019
         </p>
-        <button type="button" onclick="buttonAlert()">Click me!</button>
-      </div>
-    </div><!-- end of Jumbotron -->
+    </footer>
 
-    <section id="gallery" class="image-gallery">
-      <img src="./img/pic1.jpeg" alt="whaleshark">
-      <img src="./img/pic2.jpeg" alt="badger">
-      <img src="./img/pic3.jpeg" alt="cow">
-    </section>
-  </main>
-
-  <!-- Footer -->
-  <footer>
-    <div>
-      <a href="https://www.facebook.com" target="_blank" class="social-link" aria-label="Facebook">
-        <i class="fab fa-facebook-f"></i>
-      </a>
-      <a href="https://www.instagram.com" target="_blank" class="social-link" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-    </div>  
-    <p>Made with <span class="heart">&hearts;</span> by Code First Girls &copy; 2019</p>
-  </footer>
-
-  <!-- Bootstrap JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script
-      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-      crossorigin="anonymous"
-  >
-  </script>
-  <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"
-  >
-  </script>
-  <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-  >
-  </script>
-  <!-- JavaScript -->
-  <script>
-    function buttonAlert() {
-      alert("Thank you");
-    }
-  </script>
-</body>
+    <!-- Bootstrap JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"
+    >
+    </script>
+    <script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"
+    >
+    </script>
+    <script
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"
+    >
+    </script>
+    <!-- JavaScript -->
+    <script>
+        function buttonAlert() {
+        alert("Thank you");
+        }
+    </script>
 </body>
 
 </html>
